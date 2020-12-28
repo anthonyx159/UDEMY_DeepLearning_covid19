@@ -38,7 +38,7 @@ def allowed_file(filename):
 def main_page():
 	return '¡Servicio REST activo!'
 
-@app.route('/model/covid19/', methods=['GET','POST'])
+@app.route('/model/neumonia/', methods=['GET','POST'])
 def default():
     data = {"success": False}
     if request.method == "POST":
@@ -69,7 +69,7 @@ def default():
             	
 		# Resultados
             	prediction = 1 if (result >= 0.5) else 0
-            	CLASSES = ['Normal', 'Covid19+']
+            	CLASSES = ['Normal', 'Neumonia+']
 
             	ClassPred = CLASSES[prediction]
             	ClassProb = result
