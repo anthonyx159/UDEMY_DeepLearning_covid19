@@ -8,7 +8,7 @@ from keras.models import load_model
 
 def cargarModelo():
 
-    FILENAME_MODEL_TO_LOAD = "outputweight_neumonia_x.h5"
+    FILENAME_MODEL_TO_LOAD = "neumonia_x_model_full.h5"
     MODEL_PATH = "../../model"
 
     # Cargar la RNA desde disco
